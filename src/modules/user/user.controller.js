@@ -36,7 +36,3 @@ export const signin = catchError(async (req, res, next) => {
         }
 })
 
-//forget password
-export const forgetPassword = catchError(async(req,res,next) =>{
-        sendEmail(req.body.email)
-})
